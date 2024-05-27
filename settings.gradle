@@ -1,1 +1,1 @@
-include ('api', 'core', 'domain', 'common')
+include ('api', 'core', 'support', 'adapter:jwt', 'adapter:openfeign')

@@ -1,13 +1,10 @@
 dependencies {
     implementation project(':core')
-    implementation project(':domain')
-    implementation project(':common')
+    implementation project(':support')
+    implementation project(':adapter:jwt')
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.5'
-    implementation group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.5'
-    implementation group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.5'
 }
 
 jar {
