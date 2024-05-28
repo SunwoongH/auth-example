@@ -1,0 +1,35 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+
+  datasource:
+    url: jdbc:h2:mem:~/auth-example-test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create # none, update, validate, create, create-drop
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    redis:
+      port: 6379
+
+  h2:
+    console:
+      enabled: true
+
+jwt:
+  secret: testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+  access-token-expire-time: 1800000 # 30분 밀리초
+  refresh-token-expire-time: 604800000 # 7일 밀리초
+
+oauth:
+  kakao:
+    test: # kakao access token
